@@ -154,9 +154,12 @@ body {
 }
 
 /* submit button styles  */
+.button-container {
+  margin-top: 15px;
+}
+
 .button-container button {
   width: 100%;
-  margin: 15px auto 0;
   background-color: #ffffff;
   color: #054f73;
   border: 2px solid #054f73;
@@ -183,8 +186,25 @@ body {
 }
 
 /* responsive styles  */
+/* only small devices  */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .input-field input {
+    width: 75%;
+  }
+  .save-log-container {
+    justify-content: space-around;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button-container button {
+    width: 50%;
+  }
+}
 
-/* small devices  */
+/* before all medium all devices styles */
 @media (max-width: 767.98px) {
   body {
     display: block;
