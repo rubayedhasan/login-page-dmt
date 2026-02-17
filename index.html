@@ -31,19 +31,51 @@
           <!-- user field  -->
           <div>
             <label for="user-name"></label>
-            <div>
+            <div class="input-field">
               <span><i class="fa-solid fa-user"></i></span>
-              <input type="text" name="user" id="user-name" />
+              <input
+                type="text"
+                name="user"
+                id="user-name"
+                placeholder="Username"
+              />
             </div>
           </div>
 
           <!-- password field  -->
           <div>
             <label for="password"></label>
-            <div>
+            <div class="input-field">
               <span><i class="fa-solid fa-lock"></i></span>
-              <input type="password" name="user-password" id="password" />
+              <input
+                type="password"
+                name="user-password"
+                id="password"
+                placeholder="Password"
+              />
             </div>
+          </div>
+
+          <!-- save the login info  -->
+          <div class="save-log-container">
+            <div class="log-check-container">
+              <input type="checkbox" name="save-log" id="log-checked" />
+              <label for="log-checked">Remember Me</label>
+            </div>
+
+            <div class="forgot-box">
+              <a href="">Forgot Password?</a>
+            </div>
+          </div>
+
+          <!-- submit button field  -->
+          <div class="button-container">
+            <button type="submit">
+              Login
+              <span>
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+              </span>
+            </button>
           </div>
         </form>
       </section>
