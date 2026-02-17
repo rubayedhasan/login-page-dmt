@@ -113,6 +113,7 @@ body {
 /* input field styles  */
 .input-field {
   gap: 15px;
+  position: relative;
 }
 
 .input-field input {
@@ -131,6 +132,17 @@ body {
 .input-field input:focus {
   border-color: #054f73;
   box-shadow: 0 0 10px rgba(5, 79, 115, 0.2);
+}
+
+.peek-box {
+  position: absolute;
+  right: 12px;
+  top: 22px;
+  cursor: pointer;
+}
+.peek-box .fa-eye {
+  color: #3a6d8c;
+  font-weight: 100;
 }
 
 /* save log(remember me) section's styles  */
@@ -191,6 +203,11 @@ body {
   .input-field input {
     width: 75%;
   }
+
+  .peek-box {
+    right: calc(12px + 11%);
+  }
+
   .save-log-container {
     justify-content: space-around;
   }
