@@ -135,13 +135,13 @@ body {
 }
 
 .peek-box {
+  color: #3a6d8c;
   position: absolute;
   right: 12px;
   top: 22px;
   cursor: pointer;
 }
 .peek-box .fa-eye {
-  color: #3a6d8c;
   font-weight: 100;
 }
 
