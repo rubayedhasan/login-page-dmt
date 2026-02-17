@@ -30,7 +30,6 @@ body {
 /* login container (parent container) styles  */
 .login-container {
   width: 450px;
-  /* padding: 50px 40px; */
   padding: 50px 0px 0px;
   border-radius: 20px;
   border: 0.0001px solid #054e73d6;
@@ -50,7 +49,6 @@ body {
 }
 
 /* top:: context container styles  */
-
 .context-container {
   padding: 0px 40px;
 }
@@ -141,6 +139,7 @@ body {
   font-size: 0.75rem;
   font-weight: 500;
   justify-content: space-between;
+  margin-top: 12px;
 }
 
 .log-check-container {
@@ -181,4 +180,27 @@ body {
 .button-container button:active {
   transform: translateY(-0);
   box-shadow: 0 3px 8px rgba(5, 79, 115, 0.2);
+}
+
+/* responsive styles  */
+@media (max-width: 767.98px) {
+  body {
+    height: auto;
+    display: block;
+  }
+
+  /* login container (parent container) styles  */
+  .login-container {
+    padding: 25px 0px 0px;
+    width: 100%;
+
+    border-radius: 0;
+  }
+
+  /*bottom::  form styles  */
+
+  .login-form {
+    padding: 50px 20px;
+    border-radius: 60% 60% 0px 0px / 10% 10% 0px 0px;
+  }
 }
