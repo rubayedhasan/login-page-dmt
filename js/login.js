@@ -1,4 +1,5 @@
 // get the element
+const passwordField = document.getElementById("password");
 const peekElement = document.getElementById("peek-password");
 
 // handler function:: submit button
@@ -8,15 +9,20 @@ document
     event.preventDefault();
   });
 
-//   handler function:: toggle the peek password
-let isPeekActive = false;
+//   handler function:: toggle the peek icon and visible password
 peekElement.addEventListener("click", function () {
-  // toggle condition
-  if (!isPeekActive) {
+  // condition
+  if (passwordField.type === "password") {
+    // change the  icon
     peekElement.innerHTML = `<i class="fa-regular fa-eye-slash"></i>`;
-    isPeekActive = true;
+
+    // visible the password
+    passwordField.type = "text";
   } else {
+    // change the icon
     peekElement.innerHTML = `<i class="fa-regular fa-eye"></i>`;
-    isPeekActive = false;
+
+    // hide the password
+    passwordField.type = "password";
   }
 });
